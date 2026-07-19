@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -19,38 +19,8 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col gap-12">
-              {/* Row 1: Contact Details */}
+              {/* Location + Profiles in one row */}
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-24">
-                <div className="flex items-center space-x-4 min-w-[220px]">
-                  <div className="p-3 bg-slate-800 rounded-lg shrink-0">
-                    <Mail className="text-emerald-500" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
-                    <a
-                      href="mailto:khuzaimaaltaf024@gmail.com"
-                      className="text-slate-400 hover:text-emerald-500 transition-colors"
-                    >
-                      khuzaimaaltaf024@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-4 min-w-[220px]">
-                  <div className="p-3 bg-slate-800 rounded-lg shrink-0">
-                    <Phone className="text-emerald-500" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Phone</h4>
-                    <a
-                      href="tel:+923252714226"
-                      className="text-slate-400 hover:text-emerald-500 transition-colors"
-                    >
-                      +92 325 2714226
-                    </a>
-                  </div>
-                </div>
-
                 <div className="flex items-center space-x-4 min-w-[220px]">
                   <div className="p-3 bg-slate-800 rounded-lg shrink-0">
                     <MapPin className="text-emerald-500" size={24} />
@@ -60,10 +30,7 @@ export default function Contact() {
                     <p className="text-slate-400">Karachi, PK</p>
                   </div>
                 </div>
-              </div>
 
-              {/* Row 2: Profiles */}
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-24">
                 <div className="flex items-center space-x-4 min-w-[220px]">
                   <div className="p-3 bg-slate-800 rounded-lg shrink-0">
                     <svg role="img" viewBox="0 0 24 24" fill="currentColor" className="text-emerald-500 w-6 h-6">
